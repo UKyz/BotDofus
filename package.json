@@ -1,0 +1,33 @@
+{
+  "name": "farm-fut",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "UKyz <ukyz@icloud.com>",
+  "license": "MIT",
+  "scripts": {
+    "code-style": "xo",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "node": "^10.11.0",
+    "robotjs": "^0.5.1",
+    "robotjs-combo": "^1.0.0"
+  },
+  "pre-commit": [
+    "code-style"
+  ],
+  "xo": {
+    "envs": [
+      "node"
+    ],
+    "esnext": true,
+    "space": 2,
+    "rules": {
+      "max-len": [
+        "error",
+        80,
+        2
+      ]
+    }
+  }
+}
